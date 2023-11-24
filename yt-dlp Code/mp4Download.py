@@ -3,6 +3,8 @@ import yt_dlp
 # NOTE: You need to have ffmpeg downloaded and added to the path variable for this to work, get it here: https://ffmpeg.org/download.html#build-windows
 # You also need to 'pip install yt-dlp'
 
+#  If throwing errors update using this command: pip install --upgrade yt-dlp
+
 # Set the URL of the YouTube video you want to download
 url = input("Give me a URL: ")
 

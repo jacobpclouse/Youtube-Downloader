@@ -1,4 +1,4 @@
-## Download Youtube videos & Convert to MP3
+## Download Youtube videos & Convert to MP3 (before 11/24/23)
 - This code allows you to download videos from Youtube (via code from Tech with Tiff and pytube) AND convert MP4 files to MP3 audio files (done via moviepy)
 
 # Sources:

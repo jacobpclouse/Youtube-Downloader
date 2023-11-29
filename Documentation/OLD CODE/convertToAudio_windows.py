@@ -4,7 +4,7 @@
 # -=-=-=-=-=-=-=-=-=-=-=-=
 import os
 from moviepy.editor import *
-import sys
+
 
 # -=-=-=-=-=-=-=-=-=-=-=-=
 # Variables
@@ -13,17 +13,15 @@ import sys
 # allowed extensions for conversion
 ALLOWED_EXTENSIONS = set(['mp4'])
 
-# Target Folder to open -- pulled in from the command line
-# folderPath = '.\FilesToConvert'
-folderPath = sys.argv[1]
+# Target Folder to open
+folderPath = '.\FilesToConvert'
 
 # Extracting all the contents in the directory corresponding to path
 l_files = os.listdir(folderPath)
 
 # Make output Folder name
 convertedFolderUser = input("Enter name of output folder: ")
-# convertedFolderPath = f".\{convertedFolderUser}"
-convertedFolderPath = convertedFolderUser
+convertedFolderPath = f".\{convertedFolderUser}"
 # Create the directory
 os.mkdir(convertedFolderPath)
 print("Directory '% s' created" % convertedFolderPath)
@@ -32,14 +30,6 @@ print("Directory '% s' created" % convertedFolderPath)
 # -=-=-=-=-=-=-=-=-=-=-=-=
 # Functions
 # -=-=-=-=-=-=-=-=-=-=-=-=
-
-# printing out converting
-def printConverting():
-    print("┏┓           •         ")
-    print("┃ ┏┓┏┓┓┏┏┓┏┓╋┓┏┓┏┓     ")
-    print("┗┛┗┛┛┗┗┛┗ ┛ ┗┗┛┗┗┫•••  ")
-    print("                 ┛      ")
-
 
 # used to find file name only (before the extension)
 def getFileName(inputFile):
@@ -67,8 +57,7 @@ def convert_video_to_audio_moviepy(video_file, outputFileName,output_ext="mp3"):
 # Iterating over all the files
 for file in l_files:
     # get input path
-    # fullPath = f"{folderPath}\{file}"
-    fullPath = os.path.join(folderPath, file)
+    fullPath = f"{folderPath}\{file}"
 
     # printing out values
     print(f"Incoming fullpath: {fullPath}")
@@ -81,14 +70,12 @@ for file in l_files:
         
         # Generate output files and path
         convertedName = f'converted_{removedExtensionFromFile}'
-        # convertedOutputPath = f'{convertedFolderPath}\{convertedName}'
-        convertedOutputPath = os.path.join(convertedFolderPath,convertedName)
+        convertedOutputPath = f'{convertedFolderPath}\{convertedName}'
 
         print(f"Outgoing converted file name: {convertedName}.mp3")
         print(f"Outgoing file path: {convertedOutputPath}.mp3")
 
         # Converting!
-        printConverting()
         convert_video_to_audio_moviepy(fullPath,convertedOutputPath,'mp3')
 
 

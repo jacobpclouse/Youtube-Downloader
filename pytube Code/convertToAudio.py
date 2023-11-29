@@ -1,4 +1,4 @@
-# WINDOWS ONLY
+# This can be used to convert files on either windows or linux - tested on both in nov 2023
 # -=-=-=-=-=-=-=-=-=-=-=-=
 # Imports
 # -=-=-=-=-=-=-=-=-=-=-=-=

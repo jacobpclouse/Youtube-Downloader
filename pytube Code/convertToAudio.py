@@ -33,12 +33,15 @@ print("Directory '% s' created" % convertedFolderPath)
 # Functions
 # -=-=-=-=-=-=-=-=-=-=-=-=
 
-# printing out converting
-def printConverting():
-    print("┏┓           •         ")
-    print("┃ ┏┓┏┓┓┏┏┓┏┓╋┓┏┓┏┓     ")
-    print("┗┛┗┛┛┗┗┛┗ ┛ ┗┗┛┗┗┫•••  ")
-    print("                 ┛      ")
+# --- Function to print out my Logo ---
+def myLogo():
+    print("Created and Tested by: ")
+    print("   __                  _         ___ _                       ")
+    print("   \ \  __ _  ___ ___ | |__     / __\ | ___  _   _ ___  ___  ")
+    print("    \ \/ _` |/ __/ _ \| '_ \   / /  | |/ _ \| | | / __|/ _ \ ")
+    print(" /\_/ / (_| | (_| (_) | |_) | / /___| | (_) | |_| \__ \  __/ ")
+    print(" \___/ \__,_|\___\___/|_.__/  \____/|_|\___/ \__,_|___/\___| ")
+    print("Dedicated to Peter Zlomek and Harely Alderson III\n\n")
 
 
 # used to find file name only (before the extension)
@@ -62,7 +65,7 @@ def convert_video_to_audio_moviepy(video_file, outputFileName,output_ext="mp3"):
 # # -=-=-=-=-=-=-=-=-=-=-=-=
 # # Main
 # # -=-=-=-=-=-=-=-=-=-=-=-=
-
+myLogo()
 
 # Iterating over all the files
 for file in l_files:
@@ -88,7 +91,6 @@ for file in l_files:
         print(f"Outgoing file path: {convertedOutputPath}.mp3")
 
         # Converting!
-        printConverting()
         convert_video_to_audio_moviepy(fullPath,convertedOutputPath,'mp3')
 
 

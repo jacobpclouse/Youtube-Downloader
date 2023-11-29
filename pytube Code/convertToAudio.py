@@ -1,4 +1,15 @@
 # This can be used to convert files on either windows or linux - tested on both in nov 2023
+'''
+How to use this program:
+1) create a folder to store all your .mp4 files (ie: INPUT)
+2) move all the .mp4 files that you want to convert into that folder
+3) find either the absolute path to the folder or relative path from the convertToAudio.py file
+4) run this program and feed it the filepath as an argument. Example below:
+    python3 convertToAudio.py INPUT
+5) this program will create an output folder to store the .mp3 outputs, give it a name (ie: OUTPUT)
+6) sit back and enjoy, it will iterate through all of them and convert them one by one!
+'''
+
 # -=-=-=-=-=-=-=-=-=-=-=-=
 # Imports
 # -=-=-=-=-=-=-=-=-=-=-=-=

@@ -1,3 +1,14 @@
+# NOTE: You need to have ffmpeg downloaded and added to the path variable for this to work, get it here: https://ffmpeg.org/download.html#build-windows
+    # You also need to 'pip install yt-dlp'
+    
+    #  If throwing errors update using this command: pip install --upgrade yt-dlp
+
+# To convert this to exe, use the following:
+    # https://stackoverflow.com/questions/5458048/how-can-i-make-a-python-script-standalone-executable-to-run-without-any-dependen
+    # or
+    # pyinstaller -F yourprogram.py
+
+
 import os
 from tkinter import filedialog, messagebox, StringVar, IntVar 
 import ttkbootstrap as ttk

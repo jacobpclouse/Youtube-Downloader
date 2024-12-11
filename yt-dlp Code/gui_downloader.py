@@ -18,7 +18,7 @@ from yt_dlp import YoutubeDL
 # Global text size
 TEXT_SIZE = 12
 APP_TITLE = "YOUTUBE DOWNLOADER"
-APP_SIZE = "500x500"
+APP_SIZE = "800x700"
 APP_THEME="solar"
 
 class YouTubeDownloaderApp:
